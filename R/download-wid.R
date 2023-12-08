@@ -203,10 +203,11 @@ download_wid <- function(indicators = "all", areas = "all", years = "all", perc 
                          ages = "all", pop = "all", metadata = FALSE,
                          include_extrapolations = TRUE, verbose = FALSE) {
 
+    # THERE ARE NO CHAINS ON ME
     # Make sure that at least some indicators and some areas were selected
-    if (indicators == "all" && areas == "all") {
-        stop("you must select at least some specific indicators, areas, or both.")
-    }
+    # if (indicators == "all" && areas == "all") {
+    #     stop("you must select at least some specific indicators, areas, or both.")
+    # }
 
     # Check the format of arguments
     check_indicators(indicators)
